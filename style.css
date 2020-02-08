@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+body nav ul{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul li a img{
+    height: 60px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+    font-family: 'Muli', sans-serif;
+    text-transform: uppercase;
+}
+
+ul li a:hover{
+    color: red;
+}
+
+.ham{
+    display: none;
+}
+
+@media only screen and (max-width: 810px){
+    .media-change{
+        display : none;
+    }
+
+    .ham{
+        display: block;
+        float: right;
+    }
+
+    .logo{
+        display: block;
+    }
+}
