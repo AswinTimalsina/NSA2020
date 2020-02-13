@@ -1,0 +1,46 @@
+body{
+    background: url("Background2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    background-color: #DAD86D9;
+
+}
+form{
+    width: 80%;
+}
+
+.form-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.navvie{
+    text-align: center;
+    background :#990030;
+    border-bottom: 5px solid #BD955A;
+}
+.navvie img{
+    height: 80px;
+    transition: all .2s ease-in-out;
+}
+
+.navvie img:hover{
+    transform: scale(1.1);
+}
+
+.btn-primary{
+    background-color: #990030;
+    border: 2px solid#BD955A;
+}
+
+.btn-primary:hover{
+    background: #cc0000;
+    border: 2px solid white;
+}
+
+.form-control{
+    border: 1px solid #646469;
+}
