@@ -1,11 +1,14 @@
 body, html{
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+
+
 .parallax{
-    background: url("himal1.jpg") no-repeat;
+    background: url("assets/himal1.jpg") no-repeat;
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -14,7 +17,7 @@ body, html{
 
 
 .parallax1{
-    background: url("himal2.jpg") no-repeat;
+    background: url("assets/himal2.jpg") no-repeat;
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -30,14 +33,14 @@ body nav ul{
     margin: 0;
 }
 
-.navbar{
-    width: 100%;
-    height: 63px;
-    display: absolute;  
-    /*should be different background color*/
-    /*Problem in z-indexing*/
-
+.navbar1{
     
+    width: 100%;
+    /* height: 50px; */
+    position: fixed; 
+    /* background:/*rgb(230, 0, 73) rgb(179, 0, 57); */
+    background: linear-gradient(90deg, rgba(189,149,90,1) 10%, rgba(128,0,41,0.8) 22%);
+    transition: all 0.4s ease-in-out;  
 }
 
 div.middle{
@@ -70,10 +73,12 @@ ul li{
 }
 
 ul li a{
-    color: black;
+    color: white;
+    /* font-weight: bold; */
+    /* -webkit-text-stroke: .1px black; */
     text-decoration: none;
     list-style: none;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
 
@@ -86,25 +91,38 @@ ul li a:hover{
 }
 
 
-.block{
+.block1{
     width: 100%;
     background : #646469;
-    height: 550px;
+    
 }
 
-.block p{margin: 0;
+.block1 p{margin: 0;
 padding: 10px;}
 
+.different1.media-change1{
+    border-bottom: 2px solid white;
+}
 
+nav.shrink{
+    padding: 20px 0;
+    background: rgba(242, 242, 242, 0.4);
+}
 
-
-
-
-
+.middle li a.shrink-black{
+    color: #800029;
+}
+.middle li a.shrink-black:hover{
+    color: #BD955A;
+    -webkit-text-stroke: .5px black;
+}
 
 
 @media only screen and (max-width: 810px){
-    .different.media-change{
+    .navbar1{
+        background: linear-gradient(90deg, rgba(128,0,41,0.8) 33%, rgba(189,149,90,1) 51%, rgba(128,0,41,0.8) 69%);
+    }
+    .different1.media-change1{
        display: none;
     }
 
@@ -117,7 +135,7 @@ padding: 10px;}
     }
 
     li#ham1{
-    display: flex;
+        display: flex;
        float: right;
        width: 39px;
     }
@@ -129,6 +147,10 @@ padding: 10px;}
 
 
 }
+
+
+
+
 
 
 
