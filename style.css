@@ -84,6 +84,7 @@ ul li a{
 
 ul li a:hover{
     color: #BD955A;
+    text-decoration: none;
 }
 
 #ham1{
@@ -147,10 +148,4 @@ nav.shrink{
 
 
 }
-
-
-
-
-
-
 
