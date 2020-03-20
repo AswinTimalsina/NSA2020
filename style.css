@@ -39,7 +39,8 @@ padding: 10px;}
 /*body part ends*/
 
 .navie{
-    background: linear-gradient(90deg, rgba(189,149,90,1) 10%, rgba(128,0,41,0.8) 22%);
+    /* background: linear-gradient(90deg, rgba(189,149,90,1) 10%, rgba(128,0,41,0.8) 22%); */
+    background: rgba(242, 242, 242, 0.4);
     transition: all 0.4s ease-in-out; 
      
 }
@@ -71,7 +72,7 @@ nav.navbar-light .navbar-nav .nav-link {
     }
 
     .navbar{
-        background: linear-gradient(90deg, rgba(128,0,41,0.8) 33%, rgba(189,149,90,1) 51%, rgba(128,0,41,0.8) 69%);
+        background: rgba(242, 242, 242, 0.4);
     }
 
 
@@ -88,7 +89,7 @@ nav.navbar-light .navbar-nav .nav-link {
 }
 
 nav.expand{
-    background: rgba(242, 242, 242, 0.4);
+    background: linear-gradient(90deg, rgba(128,0,41,0.8) 33%, rgba(189,149,90,1) 51%, rgba(128,0,41,0.8) 69%);
 }
 
 img.log-expand{
