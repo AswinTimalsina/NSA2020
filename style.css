@@ -17,17 +17,52 @@ body, html{
     align-items: center;
     font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 5vw;
-    letter-spacing: 10px;
+    
     color: #800029;
+    animation: fadeAndScale .3s ease-in;
+}
+
+.fade1{
+    animation: fadeAndScale1 2s cubic-bezier(.05,1.28,.8,1.3);
+    text-align: center;
+    transform-origin: center bottom;
+}
+
+@keyframes fadeAndScale{
+    from{
+        opacity: 0;
+
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeAndScale1{
+    from{
+        opacity: 0;
+        transform: scale3d(.75,.75,1);
+    }
+
+    to{
+        opacity: 1;
+        transform: scale3d(1,1,1);
+    }
 }
 
 .parallax p {
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-shadow: 5px 2px 3px #646469;
 }
 
 img.loged{
-    width: 12vw;;
+    width: 12vw;
+    
 }
+
+
 
 .parallax1{
     background: url("assets/himal2.jpg") no-repeat;
