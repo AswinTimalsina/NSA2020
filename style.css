@@ -6,7 +6,7 @@ body, html{
 }
 
 .parallax{
-    background: url("assets/himal1.jpg") no-repeat;
+    background: url("assets/mountainspng.png") no-repeat;
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -22,8 +22,9 @@ body, html{
     background-position: center;
 }
 
-body{
+html body{
     margin: 0;
+    background-color: #BD955A	;
 }
 
 /* body part */
@@ -39,8 +40,9 @@ padding: 10px;}
 /*body part ends*/
 
 .navie{
-    /* background: linear-gradient(90deg, rgba(189,149,90,1) 10%, rgba(128,0,41,0.8) 22%); */
-    background: rgba(242, 242, 242, 0.4);
+    background: #800029;
+    /* background: rgba(242, 242, 242, 0.4); */
+    /* background: rgba(242, 242, 242, .5); */
     transition: all 0.4s ease-in-out; 
      
 }
@@ -72,8 +74,13 @@ nav.navbar-light .navbar-nav .nav-link {
     }
 
     .navbar{
-        background: rgba(242, 242, 242, 0.4);
+        /* background: linear-gradient(90deg, rgba(128,0,41,0.8) 33%, rgba(189,149,90,1) 51%, rgba(128,0,41,0.8) 69%); */
+
+        background: #800029;
+        /* background: rgba(242, 242, 242, .5); */
     }
+
+
 
 
 }
@@ -89,13 +96,21 @@ nav.navbar-light .navbar-nav .nav-link {
 }
 
 nav.expand{
-    background: linear-gradient(90deg, rgba(128,0,41,0.8) 33%, rgba(189,149,90,1) 51%, rgba(128,0,41,0.8) 69%);
+    /* background: linear-gradient(90deg, rgba(128,0,41,0.8) 33%, rgba(189,149,90,1) 51%, rgba(128,0,41,0.8) 69%); */
+    /* background: rgba(242, 242, 242, .3); */
+    /* background: linear-gradient(90deg, rgba(189,149,90,1) 10%, rgba(128,0,41,0.8) 22%); */
+    background: rgba(128,0,41);
+
 }
 
 img.log-expand{
     height: 70px;
     /* margin-left: -5%; */
 }
+
+/* .navbar-light .navbar-nav .nav-link:hover{
+    color: #800029 !important;
+} */
 
 
 
