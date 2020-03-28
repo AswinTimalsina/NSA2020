@@ -19,11 +19,11 @@ body, html{
     font-size: 5vw;
     
     color: #800029;
-    animation: fadeAndScale .3s ease-in;
+    animation: fadeAndScale .5s ease-in;
 }
 
 .fade1{
-    animation: fadeAndScale1 2s cubic-bezier(.05,1.28,.8,1.3);
+    animation: fadeAndScale1 1s cubic-bezier(.05,1.28,.8,1.3);
     text-align: center;
     transform-origin: center bottom;
 }
@@ -31,7 +31,6 @@ body, html{
 @keyframes fadeAndScale{
     from{
         opacity: 0;
-
     }
 
     to{
@@ -53,7 +52,7 @@ body, html{
 .parallax p {
     text-align: center;
     font-weight: bold;
-    letter-spacing: 8px;
+    letter-spacing: 1px;
     text-shadow: 5px 2px 3px #646469;
 }
 
@@ -146,6 +145,7 @@ nav.navbar-light .navbar-nav .nav-link {
     position: fixed !important;
     width: 100%;
     border-bottom: 5px solid white;
+    z-index: 200;
 }
 
 nav.expand{
@@ -156,6 +156,100 @@ img.log-expand{
     height: 70px;
 }
 
+img.boardMembers{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    border: 2px solid rgb(128,0,41);
+    padding: 3px;
+}
 
 
 
+.ribbon{
+    padding: 5px;
+    width: 150px;
+    background: linear-gradient(90deg, rgba(128,0,41,1) 33%, rgba(189,149,90,1) 51%, rgba(128,0,41,1) 69%);
+    position: relative;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top: 1px white solid;
+    border-right: 2px white solid;
+    
+
+}
+
+.col.cent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boardBlock{
+    margin-top: 25px;
+}
+
+.bPosition{
+    font-size: 10px;
+}
+
+.bName{
+    font-size: 13px;
+}
+
+
+
+
+
+/* HOVER OVER IMAGE */
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .cont:hover .image {
+    opacity: 0.3;
+  }
+  
+  .cont:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  div.text a{
+      text-decoration: none;
+  }
+
+img.icone{
+    width: 35px;
