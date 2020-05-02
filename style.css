@@ -5,10 +5,17 @@ body, html{
     height: 100%;
 }
 
+img.kumari{
+    position: relative;
+    bottom: -9vh;
+    height: 100vh;
+    z-index: 100;
+}
+
 .parallax{
-    background: url("assets/mountainspng.png") no-repeat;
+    /* background: url("assets/kum.svg") no-repeat; */
     height: 100%;
-    background-size: cover;
+    background-size: 40vh;
     background-attachment: fixed;
     background-position: center;
     display: flex;
@@ -17,7 +24,7 @@ body, html{
     align-items: center;
     font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 5vw;
-    
+    overflow: hidden;
     color: #800029;
     animation: fadeAndScale .5s ease-in;
 }
@@ -73,13 +80,64 @@ img.loged{
 
 html body{
     margin: 0;
-    background-color: #f7af72	;
+    background-color: #6C8F30;
+    min-height: 1500px;
+    
 }
+
+section.parall{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #6C8F30, transparent);
+    z-index: 1000;
+}
+
+#nsa-text{
+    position: relative;
+    color: white;
+    font-size: 5em;
+    z-index: 1;
+}
+/* section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6C8F30;
+    z-index: 1000;
+    mix-blend-mode: color;
+} */
+
 
 /* body part */
 .block1{
     width: 100%;
-    background : #90D9FA;
+    background : #6C8F30;
     
 }
 
@@ -145,7 +203,7 @@ nav.navbar-light .navbar-nav .nav-link {
     position: fixed !important;
     width: 100%;
     border-bottom: 5px solid white;
-    z-index: 200;
+    z-index: 2000;
 }
 
 nav.expand{
