@@ -39,11 +39,11 @@
     
 <section class="parall" id="about">
   
-  <img src="assets/pngs/background.png" alt="background" id="backie">
-  <img src="assets/pngs/mountains.png" alt="mountains" id="mountains">
-  <img src="assets/pngs/background green.png" alt="background-green" id="background-green">
-  <img src="assets/pngs/green ground.png" alt="green-ground" id="green-ground">
-  <img src="assets/pngs/kumari.png" alt="kumari" id="kumari">
+  <img src="assets/extendedsize/background.png" alt="background" id="backie">
+  <img src="assets/extendedsize/mountains.png" alt="mountains" id="mountains">
+  <img src="assets/extendedsize/background green.png" alt="background-green" id="background-green">
+  <img src="assets/extendedsize/green ground.png" alt="green-ground" id="green-ground">
+  <img src="assets/svgs1/kum.svg" alt="kumari" id="kumari">
   <h2 id="nsa-text">Nepalese Student Association</h2>
 </section>
 
@@ -122,6 +122,7 @@
     </div>
 
 
+
   
 
 
@@ -131,12 +132,34 @@
 
 
   <!-- SCRIPT -->
+<script type="text/javascript">
+let backie= document.getElementById("backie");
+let mountains= document.getElementById("mountains");
+let background_green= document.getElementById("background-green");
+let green_ground= document.getElementById("green-ground");
+let kumari= document.getElementById("kumari");
+
+window.addEventListener('scroll', function(){
+
+  var value = window.scrollY;
+
+  backie.style.top = value *0.5+ 'px';
+  mountains.style.top = -value *0.10+ 'px';
+  background_green.style.top = value *0.5+ 'px';
+  green_ground.style.top = value *0.5+ 'px';
+  kumari.style.top = value *0.15+ 'px';
+
+})
+
+</script>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/navshrink.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
        
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
