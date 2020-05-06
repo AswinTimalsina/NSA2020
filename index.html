@@ -44,7 +44,10 @@
   <img src="assets/extendedsize/background green.png" alt="background-green" id="background-green">
   <img src="assets/extendedsize/green ground.png" alt="green-ground" id="green-ground">
   <img src="assets/svgs1/kum.svg" alt="kumari" id="kumari">
+<div class="nsa_text">
+  <!-- <img src="assets/logo.png" alt="logo" style="height: 100px;"> -->
   <h2 id="nsa-text">Nepalese Student Association</h2>
+</div>
 </section>
 
     <div class="block1" id="contact"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
@@ -138,16 +141,20 @@ let mountains= document.getElementById("mountains");
 let background_green= document.getElementById("background-green");
 let green_ground= document.getElementById("green-ground");
 let kumari= document.getElementById("kumari");
+let nsa_text = document.getElementById("nsa-text");
 
 window.addEventListener('scroll', function(){
 
   var value = window.scrollY;
 
-  backie.style.top = value *0.5+ 'px';
-  mountains.style.top = -value *0.10+ 'px';
-  background_green.style.top = value *0.5+ 'px';
-  green_ground.style.top = value *0.5+ 'px';
-  kumari.style.top = value *0.15+ 'px';
+  // backie.style.top = value *0.5+ 'px';
+  mountains.style.top = value*0.5 + 'px';
+  background_green.style.top = value *0.3+ 'px';
+  // green_ground.style.top = -value *0.02+ 'px';
+  kumari.style.left = -value*2+ 'px';
+  kumari.style.top = value+"px!important";
+  nsa_text.style.top = 200-(value)+"px";
+  nsa_text.style.left = value + "px";
 
 })
 

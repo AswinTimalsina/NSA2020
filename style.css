@@ -114,12 +114,18 @@ section:before{
     background: linear-gradient(to top, #6C8F30, transparent);
     z-index: 1000;
 }
-
+.nsa_text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
 #nsa-text{
     position: relative;
     color: #800029;
-    font-size: 5vw;
+    font-size: 4em;
     z-index: 1;
+    top: 327px;
+    margin-left: 20px;
 }
 
 #green-ground{
@@ -131,6 +137,7 @@ section:before{
     z-index: 2;
     height: 99%;
     top: 10%!important;
+    left: -121px;
 
 }
 /* section:after{
