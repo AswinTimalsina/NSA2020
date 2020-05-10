@@ -43,10 +43,12 @@
   <img src="assets/extendedsize/mountains.png" alt="mountains" id="mountains">
   <img src="assets/extendedsize/background green.png" alt="background-green" id="background-green">
   <img src="assets/extendedsize/green ground.png" alt="green-ground" id="green-ground">
-  <img src="assets/svgs1/kum.svg" alt="kumari" id="kumari">
-<div class="nsa_text">
-  <!-- <img src="assets/logo.png" alt="logo" style="height: 100px;"> -->
-  <h2 id="nsa-text">Nepalese Student Association</h2>
+ <div class="kumDiv">
+  <img src="assets/svgs1/kum.svg" alt="kumari" class="kumari">
+</div>
+  <div class="middleText">
+  <img class="transLogo" src="assets/logo.png" alt="logo">
+  <span class="nsa-text">Nepalese Student Association</span>
 </div>
 </section>
 
@@ -151,10 +153,10 @@ window.addEventListener('scroll', function(){
   mountains.style.top = value*0.5 + 'px';
   background_green.style.top = value *0.3+ 'px';
   // green_ground.style.top = -value *0.02+ 'px';
-  kumari.style.left = -value*2+ 'px';
+  // kumari.style.left = -value*2+ 'px';
   kumari.style.top = value+"px!important";
-  nsa_text.style.top = 200-(value)+"px";
-  nsa_text.style.left = value + "px";
+  // nsa_text.style.top = 200-(value)+"px";
+  // nsa_text.style.left = value + "px";
 
 })
 

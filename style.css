@@ -5,12 +5,7 @@ body, html{
     height: 100%;
 }
 
-img.kumari{
-    position: relative;
-    bottom: -9vh;
-    height: 100vh;
-    z-index: 100;
-}
+
 
 .parallax{
     /* background: url("assets/kum.svg") no-repeat; */
@@ -91,8 +86,8 @@ section.parall{
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 section #backie, #mountains, #background-green, #green-ground{
@@ -114,31 +109,84 @@ section:before{
     background: linear-gradient(to top, #6C8F30, transparent);
     z-index: 1000;
 }
-.nsa_text{
+div.middleText{
     position: absolute;
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: move-top 2s; 
+    top: 29vh;
 }
-#nsa-text{
+
+@keyframes move-top{
+    from{
+        top: 70vh;
+    }
+    to{
+        top: 29vh;
+    }
+}
+
+.nsa-text{
     position: relative;
     color: #800029;
-    font-size: 4em;
+    font-size: 3.5vw;
     z-index: 1;
-    top: 327px;
     margin-left: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+
+.middleText .transLogo{
+    height: 8vw;
+
+}
+
+
+@media (max-width: 1200px ){
+    .kumDiv{
+        display: none;
+    }
+
+    .middleText .transLogo{
+        height: 10vw;
+    }
+
+    .nsa-text{
+        font-size: 5vw;
+    }
 }
 
 #green-ground{
     z-index: 2;
 }
 
-#kumari{
-    position: relative;
-    z-index: 2;
-    height: 99%;
-    top: 10%!important;
-    left: -121px;
+.kumDiv{
+    width: 100%;
+    text-align: center;
+    
+}
 
+
+.kumari{
+    bottom: -9vh;
+    height: 98vh;
+    z-index: 100;
+    position: relative;
+    left: -552px;
+    animation: move-left 2s;
+}
+
+@keyframes move-left{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -552px
+    }
 }
 /* section:after{
     content: '';
