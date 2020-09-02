@@ -90,15 +90,31 @@ section.parall{
     /* align-items: center; */
 }
 
-section #backie, #mountains, #background-green, #green-ground{
+section #backie, #mountains, #dark-background-green, #background-green, #green-ground{
     position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 123px; */
     width: 100%;
     height: 100%;
     object-fit: cover;
     pointer-events: none;
 }
+
+section #mountains{
+    top: 123px;
+}
+
+section #green-ground{
+    top: 444px;
+}
+
+section #background-green{
+    top: 184px;
+}
+
+section #dark-background-green{
+    top: 248px;
+}
+
                                   
 section:before{
     content: '';
@@ -203,6 +219,7 @@ div.middleText{
 
 /* body part */
 .block1{
+    margin-top: 221px;
     width: 100%;
     background : #6C8F30;
     
