@@ -4,9 +4,9 @@ body, html{
     padding: 0;
     height: 100%;
 }
+/*Home Design/*
 
-
-
+/*Animation*/
 .parallax{
     /* background: url("assets/kum.svg") no-repeat; */
     height: 100%;
@@ -216,19 +216,67 @@ div.middleText{
     mix-blend-mode: color;
 } */
 
+                                        /*HOME DESIGN ENDS/*
 
-/* body part */
+
+                                       /*BODY STARTS*/
+
+                                       /*ABOUT*/ 
 .block1{
-    margin-top: 221px;
+    padding-top: 115px;
+    padding-bottom: 115px;
     width: 100%;
     background : #6C8F30;
     
 }
 
-.block1 p{margin: 0;
-padding: 10px;}
+.block1 .title h1{
+    /* display: block; */
+    color: #800029;
+    /* color: white; */
+    font-weight: bold;
+    text-decoration: underline;
+}
 
-/*body part ends*/
+div.row.title{
+    display: flex;
+    justify-content: center;
+}
+
+.about-logo{
+    display: grid;
+    /* height: 35vh;
+    margin-left: 20px; */
+}
+
+.about-logo img{
+    margin: auto;
+    width: 55vw;
+    max-width: 618px;
+}
+
+p.about-p{
+    padding: 20px 60px 20px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px
+}
+
+
+/* .about-p{
+    display: flex;
+}
+
+
+
+.block1 div img.about-logo{
+    height: 35vh;
+    margin-left: 20px;
+    
+} */
+
+
+                                    /*ABOUT ENDS*/
+
 
 .navie{
     background: #800029;
