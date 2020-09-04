@@ -4,9 +4,9 @@ body, html{
     padding: 0;
     height: 100%;
 }
-/*Home Design/*
+                            /*Home Design/*
 
-/*Animation*/
+                            /*Animation*/
 .parallax{
     /* background: url("assets/kum.svg") no-repeat; */
     height: 100%;
@@ -222,7 +222,7 @@ div.middleText{
                                        /*BODY STARTS*/
 
                                        /*ABOUT*/ 
-.block1{
+.block{
     padding-top: 115px;
     padding-bottom: 115px;
     width: 100%;
@@ -230,15 +230,15 @@ div.middleText{
     
 }
 
-.block1 .title h1{
+.block-title h1{
     /* display: block; */
-    color: #800029;
+    color: #800029;;
     /* color: white; */
     font-weight: bold;
     text-decoration: underline;
 }
 
-div.row.title{
+div.row .col.block-title{
     display: flex;
     justify-content: center;
 }
@@ -258,7 +258,13 @@ div.row.title{
 p.about-p{
     padding: 20px 60px 20px 0px;
     font-family: 'Raleway', sans-serif;
-    font-size: 25px
+    font-size: 25px;
+    /* color: #800029; */
+    color: white;
+}
+
+.col-about-p{
+    text-align: center;
 }
 
 
