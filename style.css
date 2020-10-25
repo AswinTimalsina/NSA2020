@@ -75,7 +75,8 @@ img.loged{
 
 html body{
     margin: 0;
-    background-color: #6C8F30;
+    /* background-color: #6C8F30; */
+    background-color: #FFFF;
     min-height: 1500px;
     
 }
@@ -222,11 +223,17 @@ div.middleText{
                                        /*BODY STARTS*/
 
                                        /*ABOUT*/ 
-.block{
+
+
+#about{
     padding-top: 115px;
     padding-bottom: 115px;
-    width: 100%;
-    background : #6C8F30;
+    /* width: 100%; */
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color : #6C8F30;
     
 }
 
@@ -342,6 +349,7 @@ nav.navbar-light .navbar-nav .nav-link {
     width: 100%;
     border-bottom: 5px solid white;
     z-index: 2000;
+    top: 0px;
 }
 
 nav.expand{
@@ -449,3 +457,4 @@ img.boardMembers{
 
 img.icone{
     width: 35px;
+}

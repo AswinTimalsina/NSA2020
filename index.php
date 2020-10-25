@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="hover.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Production/footer.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli|PT+Sans|Roboto+Mono|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -17,7 +18,8 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light navie">
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light navie">
     <a class="navbar-brand" href="/"><img class="log"src="assets/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,17 +29,18 @@
         <a class="nav-item nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="#about">ABOUT</a>
         <a class="nav-item nav-link" href="#people">PEOPLE</a>
-        <!-- <a class="nav-item nav-link" href="#vote">VOTE</a>
-        <a class="nav-item nav-link" href="#login">LOGIN</a> -->
+        
       </div>
     </div>
-  </nav>
+  </nav> -->
 
     <!-- <div class="parallax" id="about">
       <span class="fade1"><img class="loged" src="assets/logo.png"><p>Nepalese Student Association</p></span>
       <img class="kumari" src="assets/kum.svg" alt="">
     </div> -->
-    
+
+    <?php include "./Production/navbar.php"; ?>
+
 <section class="parall" id="home">
   
   <img src="assets/background.png" alt="background" id="backie">
@@ -65,8 +68,8 @@
       </div>
       
     </div> -->
-
-    <div class="container block" id='about'>
+  <div id='about'>
+    <div class="container block">
       <div class="row">
         <div class="col block-title">
           <h1>ABOUT</h1>        
@@ -84,6 +87,7 @@
   
         </div>
       </div>
+    </div>
     </div>
 
 
@@ -174,13 +178,17 @@
   <div class="col col-md-3 col-sm-12 col-lg-3 cent"><div class='boardBlock'><img class="boardMembers" src="./assets/board/suman.jpg"><div class="ribbon"><span class="bName">Suman Rai</span><span class="bPosition">Freshman Representative</span></div></div></div>
 </div>
   </div>
-        
-  
-
-    <div class="parallax1" id="events"></div>
-    <div class="parallax" id="vote"></div>
-
-
+         
+   
+ 
+    <div class="parallax1" id="events"></div> 
+    <div class="parallax" id="vote"></div> 
+ 
+ 
+ 
+    <?php include './Production/footer.php'; ?> 
+ 
+ 
     
 
 
