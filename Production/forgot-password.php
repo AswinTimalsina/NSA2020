@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel='stylesheet' href='common-footer.css'>
     <link rel='stylesheet' href='../style.css'>
-    <link rel='stylesheet' href='form.css'>
+    <link rel='stylesheet' href='login-form.css'>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli|PT+Sans|Roboto+Mono|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -32,11 +32,11 @@
 
     <div class='page-wrapper'>
   <div class="headline">Forgot Password</div>
-  <div class="form-div">
+  <div class="form-div container">
   
     <form>
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
+        <div class="form-row ">
+          <div class="col-md-12 mb-3">
             <label for="validationDefault01">Email*</label>
             <input type="email" class="form-control" id="validationDefault01" placeholder="Email" required>
           </div>
@@ -46,6 +46,8 @@
         <br/>
         <br/>
         <span class='forgot'>Submitting this will send reset link to your email!</a>
+        <br/>
+        * = required
     </span>
       </form>
       

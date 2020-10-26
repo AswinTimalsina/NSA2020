@@ -31,16 +31,16 @@
   </nav>
 
     <div class='page-wrapper'>
-  <div class="headline">Login To Your Account</div>
-  <div class="form-div">
+    <div class="headline">Login To Your Account</div>
+  <div class="form-div container">
   
     <form>
         <div class="form-row">
-          <div class="col-md-4 mb-3">
+          <div class="col-lg-12 col-md-12 mb-3">
             <label for="validationDefault01">Username</label>
             <input type="text" class="form-control" id="validationDefault01" placeholder="Username" required>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-lg-12 col-md-12 mb-3">
             <label for="validationDefault02">Password</label>
             <input type="password" class="form-control" id="validationDefault02" placeholder="Password" required>
           </div>

@@ -163,7 +163,7 @@ div.middleText{
 }
 
 
-@media (max-width: 1200px ){
+@media (max-width: 1650px ){
     .kumDiv{
         display: none;
     }
@@ -369,7 +369,28 @@ img.boardMembers{
     padding: 3px;
 }
 
+/* .board-bg-image{
+    background:url("./assets/people.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    z-index: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    filter: blur(2px);
+} */
 
+#people{
+    background:url("./assets/people.jpg");
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+}
 
 .ribbon{
     padding: 5px;
